@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户调查表</title>
+</head>
+<body>
+  <h1 id="title">用户满意度调查</h1>
+  <p id="description">感谢您的参与</p>
+  <form id="survey-form">
+    <div>
+    <label id="name-label">姓名：</label><input id="name" 
+    type="text" required placeholder="请输入您的姓名"><br><br></div>
+    <div>
+    <label id="email-label">电子邮件：</label><input id="email" type="email" required placeholder="请输入您的Email"><br><br></div>
+    <div>
+      <label id="number-label">年龄：</label><input id="number" type="number" required placeholder="18-60岁" min="18" max="60">未成年勿入<br><br></div>
+    <select id="dropdown">
+      <option>满意</option> 
+      <option>不满意</option>
+      </select><br><br>
+    <div class="form-group">
+    <label>
+    <input type="radio" name="satisfaction" value="5">非常满意</label>
+    <label>
+    <input type="radio" name="satisfaction" value="4">满意</label>
+    <label>
+    <input type="radio" name="satisfaction" value="3">一般</label>
+    <label>
+    <input type="radio" name="satisfaction" value="2">很差</label>
+    <label>
+    <input type="radio" name="satisfaction" value="1">倒闭吧</label></div>
+    <br>
+      <div>
+    <input type="checkbox" value="speed">响应速度
+    <input type="checkbox" value="feature">功能特性
+    </div>
+    <textarea id="comments" name="comments" placeholder="请输入您宝贵的建议..." rows="5"></textarea><br>
+    <input id="submit" type="submit">
+  </form>
+    
+</body>
+</html>
